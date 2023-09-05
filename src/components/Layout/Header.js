@@ -1,5 +1,5 @@
 import React from 'react';
-import img from '../../Assets/img.jpg';
+import img from '../../Assets/download.jpg';
 import './Header.css'
 import {AiOutlineShoppingCart} from 'react-icons/ai'
 const Header = () => {

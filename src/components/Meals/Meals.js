@@ -1,10 +1,14 @@
 import React from 'react'
 import MealsSummary from './MealsSummary'
-import './Meals.css'
+import Avaliablemeals from './Avaliablemeals'
 
 const Meals = () => {
   return (
-    <div><MealsSummary/></div>
+    <>
+    <div><Avaliablemeals/></div>
+    <div> <MealsSummary/></div>
+    </>
+    
   )
 }
 
