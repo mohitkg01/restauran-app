@@ -28,11 +28,12 @@ import Input from './Input'
     <li><div><h3 className='name'>{it.name}</h3>
     <div className='desc'>{it.desc}</div>
     <div className='price'>{it.price}</div>
+    <div>{it.id}</div>
     </div>
     <div>
     <form className='form'>
-      <Input  label='quantitiy' input={{
-        id:'amount',
+      <Input  label='quantity' input={{
+        id:'amoun',
         type:"number",
         min:'1',
         max:'5',
