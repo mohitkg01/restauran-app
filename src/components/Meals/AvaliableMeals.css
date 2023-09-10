@@ -1,3 +1,15 @@
 .meals{
     margin-top: 2rem;
 }
+.form{
+    text-align: end;
+}
+.input{
+    box-sizing: 5px;
+}
+
+.form button{
+    border-radius:1rem;
+    background-color: #bc0707;
+    border: transparent;
+}

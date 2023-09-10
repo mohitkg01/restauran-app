@@ -1,7 +1,7 @@
  import React from 'react'
  import './AvaliableMeals.css'
  import Card from '../UI/Card'
-
+import Input from './Input'
  const DummyMeals=[{id:'m1',
                     name:'paratha',
                     desc:'Aallo partha plain',
@@ -25,11 +25,23 @@
  
  const Avaliablemeals = () => {
     const mealList=DummyMeals.map(it=>
-    <li><div><h3>{it.name}</h3>
-    <div>{it.desc}</div>
-    <div>{it.price}</div>
+    <li><div><h3 className='name'>{it.name}</h3>
+    <div className='desc'>{it.desc}</div>
+    <div className='price'>{it.price}</div>
     </div>
-    <div></div>
+    <div>
+    <form className='form'>
+      <Input  label='quantitiy' input={{
+        id:'amount',
+        type:"number",
+        min:'1',
+        max:'5',
+        step:'1',
+        defaultValue:'1'
+      }}/>
+     <button>+Add</button> 
+    </form>
+    </div>
     </li>);
    return (
     <section className='meals'>
