@@ -1,0 +1,13 @@
+.button {
+    height: 70px;
+    width: 250px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 1000px;
+    margin-right: 100px;
+    background-color: rgb(214, 29, 29);
+    border-radius: 4rem;
+    text-align: center;
+    align-items: center;
+}

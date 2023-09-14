@@ -1,19 +1,18 @@
-import React from 'react';
-import img from '../../Assets/download.jpg';
-import './Header.css'
-import HeaderCartButton from './HeaderCartButton';
+import React from 'react'
+import img from '../../Assets/meals.jpg'
+import classes from './Header.module.css'
+import HeaderCartButton from './HeaderCartButton'
+
 const Header = (props) => {
-  
- 
   return (
     <>
-      <header className='header'>
-        <h1>Order Meals</h1> 
-        <HeaderCartButton onClick={props.ShowCart}/>       
+      <header className={classes.header}>
+        <h1>MealStore</h1>
+       <HeaderCartButton onClick={props.onShowCart}/>
       </header>
-      <div className='img-main'>
-        <img src={img} alt="Dashboard" />
-      </div>
+     <div classes={classes['img']}>
+      <img src={img} alt='image header'/>
+     </div>
     </>
   )
 }

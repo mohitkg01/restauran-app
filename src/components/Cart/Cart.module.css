@@ -8,24 +8,12 @@
     background-color: rgba(0, 0, 0, 0.75);
   }
   
-  .modal {
-    position: fixed;
-    top: 20vh;
-    left: 25%;
-    width: 50%;
-    
-    background-color: white;
-    padding: 1rem;
-    border-radius: 14px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-    z-index: 30;
-    animation: slide-down 300ms ease-out forwards;
-  }
+  
   .price{
     float:right;
     font-size:20px;
   }
-  .order{
+  .button{
     border-radius: 1rem;
     background-color: #ada6a6;
     border: transparent;

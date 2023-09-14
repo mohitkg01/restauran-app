@@ -1,28 +1,24 @@
 import React from 'react'
-import Modle from '../UI/Modle'
-import './Cart.css'
+import classes from './Cart.module.css'
+import Modal from '../UI/Modal';
 
 const Cart = (props) => {
-    const cartItems=(
-        <ul>{[{
-            id:'1',
-            name:'parathe',
-            quantity:'5',
-            price:'150'
-        }].map((item)=> { <li>{item.price}</li> })}</ul>
-    );
+  console.log(props);
+    const cartItem=<ul className={classes.cartitem}
+    >{[{id:1 ,name:'parathe',quantity:2,price:50}
+    ].map(item=><li>{item.name}</li>)}</ul>;
   return (
-    <Modle onClose={props.onClose}> 
-        {cartItems}
-        <div className='total'> 
-        <span>Total Amount</span>
-        <span className='price'>150</span>
+    <Modal onClose={props.onClose}>
+        {cartItem}
+        <div  className={classes.total}>
+            <span>Total Amount</span>
+            <span>500</span>
         </div>
-        <div className='action'>
-            <button className='close' onClick={props.onClose}>Close</button>
-            <button className='order'>Order</button>
+        <div className={classes.action}>
+            <button className={classes.close} onClick={props.onClose}>Close</button>
+            <button className={classes.button}>Order</button>
         </div>
-    </Modle>
+    </Modal>
   )
 }
 
