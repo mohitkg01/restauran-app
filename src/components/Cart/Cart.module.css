@@ -7,8 +7,19 @@
     z-index: 20;
     background-color: rgba(0, 0, 0, 0.75);
   }
+  .cartItem{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+  }
   
-  
+  .total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+  }
   .price{
     float:right;
     font-size:20px;
